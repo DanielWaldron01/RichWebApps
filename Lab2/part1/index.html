@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Directory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Phone Directory</h1>
+    <div id="error" class="error" style="display: none;"></div>
+    <div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="mobile" placeholder="Mobile">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+    <input type="text" id="search" onkeyup="filterContacts()" placeholder="Search by Mobile">
+    <div id="noResult" class="error" style="display: none;">No matching contacts</div>
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable()">Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="contactList">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

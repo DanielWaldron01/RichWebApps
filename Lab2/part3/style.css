@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #b5e2ff;
+}
+
+#search-box {
+    margin: 20px 0;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#avatar {
+    flex: 1;
+}
+
+#avatar-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#user-details {
+    flex: 2;
+    text-align: left;
+}
+
+#repos {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#repos-list {
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0;
+}
+
+.repo-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.repo-item:last-child {
+    border-bottom: none;
+}
+
+.repo-item a {
+    text-decoration: none;
+    color: #0366d6;
+}
