@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.note {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-picker {
+    margin-top: 10px;
+}

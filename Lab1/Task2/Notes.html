@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script> 
+    <title>My Note Taking App</title>
+</head>
+
+<body>
+    <h1>Creating your notes</h1>
+
+    <div class="color-picker">
+        <label for="colorSelect">Select your notes color:</label>
+        <select id="colorSelect">
+            <option value="#ffcccb">Red</option>
+            <option value="#c2f0c2">Green</option>
+            <option value="#a9cce3">Blue</option>
+            <option value="#f9e79f">Yellow</option>
+            <option value="#800080">Purple</option>
+            <option value="#FFA500">Orange</option>
+        </select>
+    </div>
+
+    <div>
+        <textarea id="noteText" rows="6" cols="60" placeholder="Please write your note"></textarea>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+
+    <div class="note-list" id="noteList">
+        <!-- Div for displaying the user's notes -->
+    </div>
+
+</body>
+</html>
